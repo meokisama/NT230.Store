@@ -24,9 +24,9 @@ async function seedDB() {
   await seedCateg("Fantasia");
   await seedCateg("MF Bunko");
   await seedCateg("Gagaga");
+  await seedCateg("Kodansha");
   await seedCateg("Overlap");
   await seedCateg("GCN");
-  await seedCateg("HJ Bunko");
   await closeDB();
 }
 
