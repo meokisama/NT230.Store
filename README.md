@@ -1,15 +1,22 @@
-# BestBags
+# UIT.NT213 Books Store
 
 ## Table of contents
 
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Run](#run)
-- [Technology](#technology)
-- [Features](#features)
-- [Database Models](#database)
-- [Color Palette](#colors)
-- [License](#license)
+- [](#)
+  - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Demo](#demo)
+  - [Run](#run)
+  - [Technology](#technology)
+  - [Features](#features)
+  - [Database](#database)
+    - [User Schema:](#user-schema)
+    - [Category Schema:](#category-schema)
+    - [Product Schema:](#product-schema)
+    - [Cart Schema:](#cart-schema)
+    - [Order Schema:](#order-schema)
+  - [Colors](#colors)
+  - [License](#license)
 
 ## Introduction
 
@@ -20,10 +27,6 @@ NOTE: Please read the RUN section before opening an issue.
 ## Demo
 
 ![screenshot](screenshot.png)
-
-The application is deployed to Heroku and can be accessed through the following link:
-
-[BestBags on Heroku](https://best-bags.herokuapp.com/)
 
 The website resembles a real store and you can add products to your cart and pay for them. If you want to try the checkout process, you can use the dummy card number provided by stripe for testing which is 4242 4242 4242 4242 with any expiration date, CVC, and zip codes. Please <u><b>DO NOT</b></u> provide real card number and data.
 
@@ -149,10 +152,3 @@ Below is the color palette used in this application:
 - ![#f9f7f4](https://via.placeholder.com/15/f9f7f4/000000?text=+) `#f9f7f4`
 - ![#202020](https://via.placeholder.com/15/202020/000000?text=+) `#202020`
 - ![#474747](https://via.placeholder.com/15/474747/000000?text=+) `#474747`
-
-## License
-
-[![License](https://img.shields.io/:License-MIT-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- MIT License
-- Copyright 2020 © [Maryam Aljanabi](https://github.com/maryamaljanabi)
