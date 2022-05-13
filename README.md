@@ -21,8 +21,8 @@
 
 ## ToC
 
-  - [Preview](#demo)
-  - [Preparation](#run)
+  - [Preview](#preview)
+  - [Preparation](#preparation)
   - [Technology](#technology)
   - [Features](#features)
   - [Database](#database)
