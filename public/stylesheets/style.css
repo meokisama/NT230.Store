@@ -226,6 +226,7 @@ hr.gradient-style {
 .button-style {
   background-color: var(--dark-blue);
   color: var(--ivory) !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 .button-style:hover {
