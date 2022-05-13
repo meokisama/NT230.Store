@@ -31,8 +31,6 @@
     - [Product Schema](#product-schema)
     - [Cart Schema](#cart-schema)
     - [Order Schema](#order-schema)
-  - [Colors](#colors)
-  - [License](#license)
   - [Find me around the web](#find-me-around-the-web)
 
 ## Preview
@@ -41,11 +39,11 @@ The website resembles a real store and you can add products to your cart and pay
 
 ![screenshot](screenshot.png)
 
-In order to access the admin panel on `/admin` you need to provide the admin email and password.
+In order to access the admin panel on `/admin` you need to provide the admin **email** and **password**.
 
 ## Preparation
 
-To run this application, you have to set your own environmental variables. For security reasons, some variables have been hidden from view and used as environmental variables with the help of dotenv package. Below are the variables that you need to set in order to run the application:
+To run this application, you have to set your own environmental variables. For security reasons, some variables have been hidden from view and used as environmental variables with the help of `dotenv` package. Below are the variables that you need to set in order to run the application:
 
 - **MONGO_URI**: *this is the connection string of your MongoDB Atlas database.*
 
@@ -101,56 +99,56 @@ The application displays a virtual bags store that contains virtual products and
 
 ## Database
 
-*All the models can be found in the models directory created using `mongoose`.*
+All the models can be found in the models directory created using `mongoose`.
 
 #### User Schema
 
-- **username** (String)
-- **email** (String)
-- **password** (String)
+- **username** (*String*)
+- **email** (*String*)
+- **password** (*String*)
 
 #### Category Schema
 
-- **title** (String)
-- **slug** (String)
+- **title** (*String*)
+- **slug** (*String*)
 
 #### Product Schema
 
-- **productCode** (String)
-- **title** (String)
-- **imagePath** (String)
-- **description** (String)
-- **price** (Number)
-- **category** (ObjectId - a reference to the category schema)
-- **manufacturer** (String)
-- **available** (Boolean)
-- **createdAt** (Date)
+- **productCode** (*String*)
+- **title** (*String*)
+- **imagePath** (*String*)
+- **description** (*String*)
+- **price** (*Number*)
+- **category** (*ObjectId - a reference to the category schema*)
+- **manufacturer** (*String*)
+- **available** (*Boolean*)
+- **createdAt** (*Date*)
 
 #### Cart Schema
 
-- **items**: an array of objects, each object contains: <br>
-  - **productId** (ObjectId - a reference to the product schema) <br>
-  - **qty** (Number) <br>
-  - **price** (Number) <br>
-  - **title** (String) <br>
-  - **productCode** (Number) <br>
-- **totalQty** (Number)
-- **totalCost** (Number)
-- **user** (ObjectId - a reference to the user schema)
+- **items**: *an array of objects, each object contains.*
+  - **productId** (*ObjectId - a reference to the product schema*)
+  - **qty** (*Number*)
+  - **price** (*Number*)
+  - **title** (*String*)
+  - **productCode** (*Number*)
+- **totalQty** (*Number*)
+- **totalCost** (*Number*)
+- **user** (*ObjectId - a reference to the user schema*)
 - **createdAt**
 
 ---  
-**Note:** *The reason for including the title, price, and productCode again in the items object is AdminBro. If we are to write our own admin interface, we can remove them and instead populate a product field using the product id. However, AdminBro doesn't populate deep levels, so we had to repeat these fields in the items array in order to display them in the admin panel.*
+**Note.** *The reason for including the title, price, and productCode again in the items object is AdminBro. If we are to write our own admin interface, we can remove them and instead populate a product field using the product id. However, AdminBro doesn't populate deep levels, so we had to repeat these fields in the items array in order to display them in the admin panel.*
 
 ---
 ### Order Schema:
 
-- **user** (ObjectId - a reference to the user schema)
-- **cart** (instead of a reference, we had to structure an object identical to the cart schema because of AdminBro, so we can display the cart's contents in the admin interface under each order)
-- **address** (String)
-- **paymentId** (String)
-- **createdAt** (Date)
-- **Delivered** (Boolean)
+- **user** (*ObjectId - a reference to the user schema*)
+- **cart** (*instead of a reference, we had to structure an object identical to the cart schema because of AdminBro, so we can display the cart's contents in the admin interface under each order*)
+- **address** (*String*)
+- **paymentId** (*String*)
+- **createdAt** (*Date*)
+- **Delivered** (*Boolean*)
 
 ### Find me around the web
 
@@ -159,5 +157,5 @@ The application displays a virtual bags store that contains virtual products and
 - Information in public on <a href="https://meoki.net/">**Blog**</a> 
 - Sharing updates on <a href="https://facebook.com/slytherinnn/">**Facebook**</a>
 - Other products on <a href="https://www.behance.net/meokisama">**Behance**</a>
-- Daily photos on <a href="https://www.instagram.com/hi.im.meoki/">**Instagram**</a>
+- Daily photos on <a href="https://www.instagram.com/meokisama/">**Instagram**</a>
 - "Wibu" collection on <a href="https://www.flickr.com/photos/meokisama/albums">**Flickr**</a>
