@@ -7,7 +7,7 @@
 <h2 align="center">UIT.NT213 Books Store </h2>
 
 <h4 align="center">A room without books is like a body without a soul.</h4>
-<p align='center'>A responsive ecommerce website using Node js, Express js, and MongoDB.</p>
+<p align='center'>A responsive ecommerce website using NodeJS, ExpressJS, and MongoDB.</p>
 
 <p align="center">
   <a href="https://github.com/meokisama/meokisama.github.io/blob/develop/LICENSE">
