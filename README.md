@@ -150,6 +150,47 @@ All the models can be found in the models directory created using `mongoose`.
 - **createdAt** (*Date*)
 - **Delivered** (*Boolean*)
 
+### Installation
+*A guide to setup this project on **Vlab System** of **UIT**. (**Ubuntu**)*
+
+1. Install **NodeJS** version 18.1
+  ```
+  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+  ```
+2. Clone this repository
+  ``` 
+  git clone https://github.com/meokisama/NT230.Store.git Store
+  ```
+3. Install **modules** and **depecdencies**
+  ```
+  cd Store
+  npm install
+  ```
+4. Create `.env` file to declare **environment variables** in [**Preparation**](#preparation) above
+  ```
+  nano .env
+
+  //Fill out all variables and Save the .env file.
+  ```
+5. Setup database for **MongoDB Atlas**
+  ```
+  cd seedDB
+  node category-seed.js
+  node products-seed.js
+  ```
+6. **Redirect** connection to web server
+  
+    *By default, server will run on port **3000**. Instead of running on port 80, we can **redirect port 80** to your application's port (>1024).*
+
+  ```
+  sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 3000
+  ```
+7. All done. Now you can access website from local or by the Vlab links.
+  ```
+  1. http://localhost:3000
+  2. Vlab: https://a084742fa316491c8c78564efcbce9e0-68f6236f-vm-80.vlab2.uit.edu.vn
+  ```
 ### Find me around the web
 
 <a href="https://facebook.com/slytherinnn/"><img align="left" width="150" height="150" src="https://github.com/meokisama/meokisama/blob/master/image/2750554.png"> </a>
