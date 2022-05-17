@@ -31,7 +31,7 @@
     - [Product Schema](#product-schema)
     - [Cart Schema](#cart-schema)
     - [Order Schema](#order-schema)
-  - [Installation](#installation)
+  - [Installation](#installation-uit-vlab)
   - [Find me around the web](#find-me-around-the-web)
 
 ## Preview
@@ -98,6 +98,14 @@ The application displays a virtual bags store that contains virtual products and
 - Login or logout to the admin panel
 - View all the information stored in the database. They can view/add/edit/delete orders, users, products and categories. The cart model cannot be modified by an admin because a cart is either modified by the logged in user before the purchase or deleted after the purchase.
 
+#### Other features:
+
+- Searching products
+- MapBox to show the address
+- Email responding in Contact
+- AdminBro panel
+- Purchase method
+
 ## Database
 
 All the models can be found in the models directory created using `mongoose`.
@@ -154,33 +162,33 @@ All the models can be found in the models directory created using `mongoose`.
 ## Installation (UIT Vlab)
 *A guide to setup this project on **Vlab System** of **UIT**. (**Ubuntu**)*
 
-1. Install **NodeJS** version 18.1
+1. Install **NodeJS** version 18.1:
   ```
   curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
   sudo apt-get install -y nodejs
   ```
-2. Clone this repository
+2. Clone this repository:
   ``` 
   git clone https://github.com/meokisama/NT230.Store.git Store
   ```
-3. Install **modules** and **depecdencies**
+3. Install **modules** and **depecdencies**:
   ```
   cd Store
   npm install
   ```
-4. Create `.env` file to declare **environment variables** in [**Preparation**](#preparation) above
+4. Create `.env` file to declare **environment variables** in [**Preparation**](#preparation) above:
   ```
   nano .env
 
   //Fill out all variables and Save the .env file.
   ```
-5. Setup database for **MongoDB Atlas**
+5. Setup database for **MongoDB Atlas**:
   ```
   cd seedDB
   node category-seed.js
   node products-seed.js
   ```
-6. **Redirect** connection to web server
+6. **Redirect** connection to web server:
   
     *By default, server will run on port **3000**. Instead of running on port 80, we can **redirect port 80** to your application's port (>1024).*
 
