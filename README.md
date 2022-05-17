@@ -151,7 +151,7 @@ All the models can be found in the models directory created using `mongoose`.
 - **createdAt** (*Date*)
 - **Delivered** (*Boolean*)
 
-### Installation
+## Installation (UIT Vlab)
 *A guide to setup this project on **Vlab System** of **UIT**. (**Ubuntu**)*
 
 1. Install **NodeJS** version 18.1
