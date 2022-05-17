@@ -31,6 +31,7 @@
     - [Product Schema](#product-schema)
     - [Cart Schema](#cart-schema)
     - [Order Schema](#order-schema)
+  - [Installation](#installation)
   - [Find me around the web](#find-me-around-the-web)
 
 ## Preview
@@ -191,6 +192,16 @@ All the models can be found in the models directory created using `mongoose`.
   1. http://localhost:3000
   2. Vlab: https://a084742fa316491c8c78564efcbce9e0-68f6236f-vm-80.vlab2.uit.edu.vn
   ```
+---  
+**Note.** *Some notes about using this website...*
+
+- To use the **contact feature**, your email account (Gmail) must turn on **Less secure app access** of Google (*To help keep your account secure, starting **May 30, 2022**, ​​Google will no longer support this feature.*)
+  ```
+  https://myaccount.google.com/lesssecureapps
+  ```
+  ![](less_secure.png)
+
+---
 ### Find me around the web
 
 <a href="https://facebook.com/slytherinnn/"><img align="left" width="150" height="150" src="https://github.com/meokisama/meokisama/blob/master/image/2750554.png"> </a>
