@@ -39,7 +39,7 @@ app.use(
       mongooseConnection: mongoose.connection,
     }),
     //session expires after 3 hours
-    cookie: { maxAge: 60 * 1000 * 60 * 3 },
+    cookie: { sameSite: true, maxAge: 60 * 1000 * 60 * 3 },
   })
 );
 app.use(flash());
