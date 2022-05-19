@@ -80,7 +80,7 @@ The application is built with:
 
 ## Features
 
-The application displays a virtual bags store that contains virtual products and contact information.
+The application displays a virtual store that contains virtual products and contact information.
 
 #### Users can do the following:
 
