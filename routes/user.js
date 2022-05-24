@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const csrf = require("csurf");
+const rateLimit = require('express-rate-limit');
 var passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
 const Product = require("../models/product");
@@ -72,9 +73,17 @@ router.get("/signin", middleware.isNotLoggedIn, async (req, res) => {
   });
 });
 
+//Rate limiting setting
+const apiLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minutes
+  max: 5,
+  message: 'Too many request from this IP. This page can only be requested 5 times per minutes.',
+});
+
 // POST: handle the signin logic
 router.post(
   "/signin",
+  apiLimiter,
   [
     middleware.isNotLoggedIn,
     userSignInValidationRules(),
